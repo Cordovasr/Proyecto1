@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 4rem;
+  height: auto;
+}
+
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, auto);
+  object-fit: contain;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  grid-column: 1/9;
+  grid-row: 1/4;
+}
+
+#overlay {
+  grid-column: 1/9;
+  grid-row: 1/4;
+  background-color: rgb(229, 153, 246);
+  opacity: 0.5;
+}
+
+.logoblanco {
+  z-index: 6;
+  grid-column: 4/4;
+  grid-row: 1/4;
+  width: 55vw;
+}
+
+#logoblanco {
+  width: 100%;
+}
